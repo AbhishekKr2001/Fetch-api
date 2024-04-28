@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogApp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(207, 207, 207);
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .container {
+
+            height: 90vh;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .small {
+
+            padding: 15px 15px;
+            width: 100%;
+            height: 70%;
+            border-radius: 10px;
+            background-color: rgb(241, 241, 241);
+            overflow-y: scroll;
+
+        }
+
+        .heading {
+
+            height: 10%;
+        }
+
+        @media only screen and (max-width: 1000px) {
+            body {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+
+
+            }
+
+            .container {
+
+                /* height: ; */
+                width: 80%;
+
+                /* display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center; */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <h1>POSTS</h1>
+        </div>
+        <div id="myContent" Class=" small">
+        </div>
+    </div>
+    <div class="container">
+        <div class="heading">
+            <h1>TODOS</h1>
+        </div>
+        <div id="todo" class=" small"></div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
